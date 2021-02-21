@@ -2,7 +2,7 @@
   Sorry, no photos
 </p>
 
-<ul class="list-unstyled">
+<ul class="list-unstyled" *ngIf="rows">
   <li *ngFor="let cols of rows" class="row">
     <div class="col-4" *ngFor="let photo of cols">
       <ap-photo [url]="photo.url" [description]="photo.description"> </ap-photo>
