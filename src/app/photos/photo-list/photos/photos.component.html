@@ -2,7 +2,7 @@
 
 <ul class="list-unstyled" *ngIf="rows">
   <li *ngFor="let cols of rows" class="row no-gutters">
-    <div class="col-4" *ngFor="let photo of cols">
+    <div class="col-4" *ngFor="let photo of cols" apDarkenOnHover>
       <ap-card>
         <ap-photo [url]="photo.url" [description]="photo.description"></ap-photo>
 
